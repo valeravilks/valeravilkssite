@@ -27,4 +27,4 @@ events:
 tooling:
   acorn:
     service: appserver
-    cmd: wp acorn --path="/app/wordpress"
+    cmd: wp --path=/app/wordpress acorn
