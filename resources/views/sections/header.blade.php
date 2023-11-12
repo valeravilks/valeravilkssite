@@ -1,4 +1,5 @@
 <header class="banner">
+  <x-atoms.logo.light></x-atoms.logo.light>
   <a class="brand" href="{{ home_url('/') }}">
     {!! $siteName !!}
   </a>
