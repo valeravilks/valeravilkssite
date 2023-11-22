@@ -6,4 +6,9 @@
 
 @extends('layouts.app')
 
-Hello!
+<div>
+  <x-atoms.example/>
+  <x-atoms.docs-commets.index :class="App\View\Components\Atoms\Example::class"/>
+</div>
+
+
