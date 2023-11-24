@@ -62,7 +62,8 @@
     "lint": [
       "phpcs --extensions=php --standard=PSR12 app"
     ],
-    "docs": "phpDocumentor run -d app/View/Components -t docs"
+    "docs": "phpDocumentor run -d app/View/Components -t docs",
+    "tests": "./vendor/bin/phpunit --configuration phpunit.xml"
   },
   "extra": {
     "acorn": {
