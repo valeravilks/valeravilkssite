@@ -11,9 +11,12 @@
   <x-atoms.docs-commets.index :class="App\View\Components\Atoms\Example::class"/>
 </div>
 
-<x-atoms.headers>
-  No Props
-</x-atoms.headers>
+@foreach($mockHeaders as $text)
+  <x-atoms.headers>
+    {{ $text }}
+  </x-atoms.headers>
+@endforeach
+
 <x-atoms.headers tag="2">
   Tag 2
 </x-atoms.headers>
