@@ -2,7 +2,8 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Installation](#installation)
+2. [Introduction](#introduction)
+2. [Technology Stack and Tools](technology_stack.md)
    1. [System Requirements](#system-requirements)
 3. [Project Philosophy](#project-philosophy)
 4. [Project Structure](#project-structure)
