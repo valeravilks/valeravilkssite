@@ -1,5 +1,6 @@
 import domReady from '@roots/sage/client/dom-ready';
-
+import MyComponent from './ReactComponent.js';
+import ReactDOM from 'react-dom';
 /**
  * Application entrypoint
  */
@@ -17,6 +18,9 @@ domReady(async() => {
 
         new Example();
     }
+
+    ReactDOM.render(<MyComponent />, document.getElementById('react-root'));
+
 });
 
 /**x

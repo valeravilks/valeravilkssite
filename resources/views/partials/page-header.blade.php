@@ -9,4 +9,6 @@
   <x-atoms.example>
     Example Test
   </x-atoms.example>
+  <h1>React</h1>
+  <div id="react-root"></div>
 </div>
