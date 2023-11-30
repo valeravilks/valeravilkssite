@@ -7,6 +7,7 @@ services:
   appserver:
     overrides:
       volumes:
+#        // TODO: Add each file and folder need for project
         - "./:/app/wordpress/wp-content/themes/sage"
         - "/app/wordpress/wp-content/themes/sage/wordpress/"
 events:
