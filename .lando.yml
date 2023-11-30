@@ -1,5 +1,7 @@
-name: my-first-wordpress-app
+name: starter
 recipe: wordpress
+env_file:
+  - .env.example
 config:
   webroot: wordpress
   php: '8.1'
@@ -8,8 +10,6 @@ services:
     overrides:
       volumes:
 #        // TODO: Add each file and folder need for project
-        - "./:/app/wordpress/wp-content/themes/sage"
-        - "/app/wordpress/wp-content/themes/sage/wordpress/"
 events:
   post-start:
     appserver: |
@@ -29,3 +29,6 @@ tooling:
   acorn:
     service: appserver
     cmd: wp --path=/app/wordpress acorn
+  wp-install:
+    service: appserver
+    cmd:
