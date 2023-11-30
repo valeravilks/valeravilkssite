@@ -25,7 +25,7 @@
     "backstopjs": "^6.2.2"
   },
   "dependencies": {
-    "caniuse-lite": "^1.0.30001561",
+    "caniuse-lite": "^1.0.30001565",
     "micromodal": "^0.4.10"
   }
 }
