@@ -4,14 +4,14 @@
 
 @include('sections.header')
 
-  <main id="main" class="main">
+  <main id="main" class="main container mx-auto px-4">
     @yield('content')
   </main>
 
-  @hasSection('sidebar')
-    <aside class="sidebar">
-      @yield('sidebar')
-    </aside>
-  @endif
+{{--  @hasSection('sidebar')--}}
+{{--    <aside class="sidebar">--}}
+{{--      @yield('sidebar')--}}
+{{--    </aside>--}}
+{{--  @endif--}}
 
 @include('sections.footer')
