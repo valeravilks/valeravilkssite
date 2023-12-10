@@ -34,7 +34,6 @@ class Index extends Component
         // TODO: Check by type class
         $this->class = $class;
         $reflectionClass = new ReflectionClass($this->class);
-        $comm =
         $this->classDocs = $reflectionClass->getDocComment();
         $this->variablesDocs = $reflectionClass->getProperties(ReflectionProperty::IS_PUBLIC);
     }

@@ -4,26 +4,22 @@
   TODO: Create rooting for this page
 --}}
 
-@extends('layouts.app')
+{{--@extends('layouts.app')--}}
 
-<div>
-  <x-atoms.example/>
-  <x-atoms.docs-commets.index :class="App\View\Components\Atoms\Example::class"/>
+<div class="container mx-auto">
+  <div class="grid grid-cols-2 gap-2">
+    <x-atoms.example/>
+    <x-atoms.docs-commets.index :class="App\View\Components\Atoms\Example::class"/>
+  </div>
+  <hr>
+  <div class="grid grid-cols-2 gap-2">
+    <div class="">
+      @foreach($mockHeaders as $text)
+        <x-atoms.headers>
+          {{ $text }}
+        </x-atoms.headers>
+      @endforeach
+    </div>
+    <x-atoms.docs-commets.index :class="App\View\Components\Atoms\Headers::class"/>
+  </div>
 </div>
-
-@foreach($mockHeaders as $text)
-  <x-atoms.headers>
-    {{ $text }}
-  </x-atoms.headers>
-@endforeach
-
-<x-atoms.headers tag="2">
-  Tag 2
-</x-atoms.headers>
-<x-atoms.headers tag="2" styles="3">
-  Tag 2 Style 3
-</x-atoms.headers>
-<x-atoms.headers tag="2" styles="5">
-  Tag 2 Style 3
-</x-atoms.headers>
-<x-atoms.docs-commets.index :class="App\View\Components\Atoms\Headers::class"/>
