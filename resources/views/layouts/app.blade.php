@@ -2,7 +2,10 @@
   {{ __('Skip to content') }}
 </a>
 
-@include('sections.header')
+<div class="container mx-auto px-4">
+  @include('partials.page-header')
+</div>
+
 
   <main id="main" class="main container mx-auto px-4">
     @yield('content')

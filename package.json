@@ -22,9 +22,12 @@
     "@roots/bud": "6.16.1",
     "@roots/bud-tailwindcss": "6.16.1",
     "@roots/sage": "6.16.1",
+    "@wordpress/block-editor": "^12.16.0",
+    "@wordpress/components": "^25.14.0",
     "backstopjs": "^6.2.2"
   },
   "dependencies": {
+    "@wordpress/i18n": "^4.48.0",
     "caniuse-lite": "^1.0.30001561",
     "micromodal": "^0.4.10"
   }
