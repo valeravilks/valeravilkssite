@@ -3,7 +3,7 @@
 </a>
 
 <div class="container mx-auto px-4">
-  @include('partials.page-header')
+  @include('components.organisms.headers.type-1')
 </div>
 
 
@@ -17,4 +17,4 @@
 {{--    </aside>--}}
 {{--  @endif--}}
 
-@include('sections.footer')
+@include('components.organisms.footers.type-1')
