@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('components.organisms.layouts.type-1')
 
 @section('content')
   @include('partials.page-header')
