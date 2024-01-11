@@ -3,7 +3,7 @@ import {
   InspectorControls,
   useBlockProps,
 } from "@wordpress/block-editor";
-import { BaseControl, PanelBody, TextControl } from "@wordpress/components";
+import { BaseControl, PanelBody, TextControl, FormFileUpload } from "@wordpress/components";
 import { __ } from "@wordpress/i18n";
 
 /* Block name */
@@ -49,7 +49,7 @@ export const edit = ({ attributes, setAttributes }) => {
 
       <div {...props}>
         <TextControl
-          label={__(`Modal headings1`, `radicle`)}
+          label={__(`Modal headings12`, `radicle`)}
           className="mb-6"
           value={heading}
           onChange={(heading) => setAttributes({ heading })}
@@ -63,6 +63,13 @@ export const edit = ({ attributes, setAttributes }) => {
             />
           </div>
         </BaseControl>
+
+        <FormFileUpload
+          accept="image/*"
+          onChange={ ( event ) => console.log( event.currentTarget.files ) }
+        >
+          Upload
+        </FormFileUpload>
       </div>
     </>
   );

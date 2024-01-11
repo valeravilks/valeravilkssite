@@ -167,7 +167,7 @@ return [
     */
 
     'admin_menu' => [
-        // 'gutenberg',
+//         'gutenberg',
     ],
 
 ];

@@ -4,7 +4,11 @@ namespace App\View\Components\Molecules\Menus;
 
 use Illuminate\View\Component;
 
-class Type-1 extends Component
+/**
+ * link https://github.com/Log1x/navi
+ */
+
+class Type extends Component
 {
     /**
      * Create a new component instance.
@@ -13,7 +17,14 @@ class Type-1 extends Component
      */
     public function __construct()
     {
-        //
+
+        add_action('after_setup_theme', [$this, 'registerMenu']);
+//        var_dump('asdasdasd');
+    }
+
+    public function registerMenu()
+    {
+        register_nav_menu('primary', 'Основное меню');
     }
 
     /**
@@ -23,6 +34,6 @@ class Type-1 extends Component
      */
     public function render()
     {
-        return view('components.molecules.menus.type-1');
+        return view('components.molecules.menus.type');
     }
 }

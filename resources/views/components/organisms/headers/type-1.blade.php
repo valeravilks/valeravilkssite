@@ -3,6 +3,6 @@
       <x-molecules.logo/>
     </div>
     <div>
-      <x-molecules.menus.type-1/>
+      <x-molecules.menus.type/>
     </div>
 </div>
