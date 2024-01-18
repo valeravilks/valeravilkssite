@@ -17,6 +17,8 @@ if (! file_exists($composer = __DIR__.'/vendor/autoload.php')) {
 
 require $composer;
 
+// TODO: Here you need to add the ENV setting like in Bedrock
+
 /*
 |--------------------------------------------------------------------------
 | Register The Bootloader
